@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Asistente Inteligente</title>
+
+    <style>
+        body {
+
+            font-family: Arial;
+
+            background: #f5f5f5;
+
+            text-align: center;
+
+        }
+
+        .cards {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin-top: 40px;
+
+        }
+
+        .card {
+
+            width: 180px;
+
+            padding: 20px;
+
+            background: white;
+
+            border-radius: 15px;
+
+            box-shadow: 0 0 10px gray;
+
+            cursor: pointer;
+
+        }
+
+        .card img {
+
+            width: 80px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Asistente Inteligente</h1>
+
+    <p>Selecciona una opción o usa el chat.</p>
+
+    <div class="cards">
+
+        <div class="card" onclick="alert('Abre el chat y escribe: Ver clima')">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+
+            <h3>Ver clima</h3>
+
+        </div>
+
+        <div class="card" onclick="alert('Abre el chat y escribe: Ayuda')">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
+
+            <h3>Ayuda</h3>
+
+        </div>
+
+        <div class="card" onclick="alert('Abre el chat y escribe: Informacion')">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/471/471664.png">
+
+            <h3>Información</h3>
+
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="TALLERINTERFACES"
+    agent-id="b8797b71-933e-4f78-9f53-4ed841ca89a1"
+    language-code="es"
+    ></df-messenger>
+
+</body>
+
+</html>
